@@ -1,0 +1,46 @@
+{
+  "name": "ga-tracker-snippet",
+  "description": "Generate a code snippet to create a Google Analytics tracker object",
+  "keywords": [
+    "ga",
+    "tracker",
+    "code",
+    "script",
+    "google",
+    "analytics",
+    "google analytics",
+    "universal analytics",
+    "snippet",
+    "generate",
+    "template"
+  ],
+  "main": "dist/ga-tracker-snippet-browser.js",
+  "authors": [
+    {
+      "name": "Shinnosuke Watanabe",
+      "homepage": "https://github.com/shinnn"
+    }
+  ],
+  "homepage": "https://github.com/shinnn/ga-tracker-snippet",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shinnn/ga-tracker-snippet.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "is-var-name": "~1.0.0"
+  },
+  "ignore": [
+    "**/.*",
+    "*.gif",
+    "*.yml",
+    "bower_components",
+    "components",
+    "node_modules",
+    "cli.js",
+    "gulpfile.js",
+    "test",
+    "component.json",
+    "package.json"
+  ]
+}

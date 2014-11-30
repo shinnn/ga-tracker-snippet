@@ -1,0 +1,30 @@
+{
+  "name": "ga-tracker-snippet",
+  "version": "1.0.0",
+  "description": "Generate a code snippet to create a Google Analytics tracker object",
+  "keywords": [
+    "ga",
+    "tracker",
+    "code",
+    "script",
+    "google",
+    "analytics",
+    "google analytics",
+    "universal analytics",
+    "snippet",
+    "generate",
+    "template"
+  ],
+  "repo": "shinnn/ga-tracker-snippet",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ],
+  "files": [
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "shinnn/is-var-name": "*"
+  }
+}
