@@ -12,7 +12,8 @@ environment:
 
 install:
   - ps: Install-Product node $env:nodejs_version
-  - npm install
+  - npm install --production
+  - npm install bower each-exec require-bower-files tape
   - npm run-script pretest
 
 build: off
