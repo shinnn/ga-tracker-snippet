@@ -33,14 +33,12 @@
   "ignore": [
     "**/.*",
     "*.gif",
+    "*.js",
+    "*.json",
     "*.yml",
     "bower_components",
     "components",
     "node_modules",
-    "cli.js",
-    "gulpfile.js",
-    "test",
-    "component.json",
-    "package.json"
+    "test"
   ]
 }
