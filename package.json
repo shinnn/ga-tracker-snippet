@@ -9,8 +9,9 @@
     "LICENSE"
   ],
   "scripts": {
-    "pretest": "bower install",
+    "pretest": "bower install --production",
     "test": "gulp test",
+    "test-only": "tape test-*.js",
     "coverage": "istanbul cover -x=bower_components/** test-api.js",
     "coveralls": "${npm_package_scripts_coverage} && istanbul-coveralls"
   },
