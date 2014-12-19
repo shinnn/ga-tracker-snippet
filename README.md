@@ -1,10 +1,10 @@
 # ga-tracker-snippet
 
-[![Build Status](https://travis-ci.org/shinnn/ga-tracker-snippet.svg?branch=master)](https://travis-ci.org/shinnn/ga-tracker-snippet)
+[![Build Status](https://img.shields.io/travis/shinnn/ga-tracker-snippet.svg?style=flat)](https://travis-ci.org/shinnn/ga-tracker-snippet)
 [![Build status](https://ci.appveyor.com/api/projects/status/2t08amtmb6w4trjv?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/ga-tracker-snippet)
-[![Coverage Status](https://img.shields.io/coveralls/shinnn/ga-tracker-snippet.svg)](https://coveralls.io/r/shinnn/ga-tracker-snippet)
-[![Dependency Status](https://david-dm.org/shinnn/ga-tracker-snippet.svg)](https://david-dm.org/shinnn/ga-tracker-snippet)
-[![devDependency Status](https://david-dm.org/shinnn/ga-tracker-snippet/dev-status.svg)](https://david-dm.org/shinnn/ga-tracker-snippet#info=devDependencies)
+[![Coverage Status](https://img.shields.io/coveralls/shinnn/ga-tracker-snippet.svg?style=flat)](https://coveralls.io/r/shinnn/ga-tracker-snippet)
+[![Dependency Status](https://david-dm.org/shinnn/ga-tracker-snippet.svg?style=flat)](https://david-dm.org/shinnn/ga-tracker-snippet)
+[![devDependency Status](https://david-dm.org/shinnn/ga-tracker-snippet/dev-status.svg?style=flat)](https://david-dm.org/shinnn/ga-tracker-snippet#info=devDependencies)
 
 Generate a code snippet to create a [Google Analytics](http://www.google.com/analytics/) tracker object
 
@@ -23,13 +23,16 @@ ga('send', 'pageview');
 
 ### Package managers
 
-#### [npm](https://www.npmjs.org/) [![NPM version](https://badge.fury.io/js/ga-tracker-snippet.svg)](https://www.npmjs.org/package/ga-tracker-snippet)
+[![NPM version](https://img.shields.io/npm/v/ga-tracker-snippet.svg?style=flat)](https://www.npmjs.com/package/ga-tracker-snippet)
+[![Bower version](https://img.shields.io/bower/v/ga-tracker-snippet.svg?style=flat)](https://github.com/shinnn/ga-tracker-snippet/releases)
+
+#### [npm](https://www.npmjs.com/)
 
 ```sh
 npm install ga-tracker-snippet
 ```
 
-#### [bower](http://bower.io/) [![Bower version](https://badge.fury.io/bo/ga-tracker-snippet.svg)](https://github.com/shinnn/ga-tracker-snippet/releases)
+#### [bower](http://bower.io/)
 
 ```sh
 bower install ga-tracker-snippet
