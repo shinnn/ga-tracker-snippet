@@ -1,10 +1,12 @@
 /*jshint unused:true */
 'use strict';
 
+var pkg = require('./package.json');
+
 var path = require('path');
 var spawn = require('child_process').spawn;
 
-var $ = require('gulp-load-plugins')();
+var $ = require('gulp-load-plugins')({config: pkg});
 var browserify = require('browserify');
 var gulp = require('gulp');
 var mergeStream = require('merge-stream');
@@ -13,18 +15,19 @@ var source = require('vinyl-source-stream');
 var stylish = require('jshint-stylish');
 var tapSpec = require('tap-spec');
 
-var pkg = require('./package.json');
 var bower = require('./bower.json');
 var banner = require('tiny-npm-license')(pkg);
 
 gulp.task('lint', function() {
-  gulp.src('{,test/}*.js')
-    .pipe($.jscs('package.json'))
-    .pipe($.jshint())
-    .pipe($.jshint.reporter(stylish));
-  gulp.src('*.json')
-    .pipe($.jsonlint())
-    .pipe($.jsonlint.reporter());
+  return mergeStream(
+    gulp.src('{,test/}*.js')
+      .pipe($.jscs(pkg.jscsConfig))
+      .pipe($.jshint())
+      .pipe($.jshint.reporter(stylish)),
+    gulp.src('*.json')
+      .pipe($.jsonlint())
+      .pipe($.jsonlint.reporter())
+  );
 });
 
 gulp.task('clean', rimraf.bind(null, 'dist'));
@@ -36,7 +39,7 @@ gulp.task('build', ['lint', 'clean'], function() {
       .pipe($.replace(banner + '\n', ''))
       .pipe($.replace(/isVarName/g, 'window.$&'))
       .pipe($.replace('module.exports', 'window.gaTrackerSnippet'))
-      .pipe($.wrap(banner + '!function() {\n<%= contents %>\n}();\n'))
+      .pipe($.replace(/[\s\S]*/, banner + '!function() {\n$&\n}();\n'))
       .pipe($.rename(bower.main))
       .pipe(gulp.dest('')),
     browserify({
