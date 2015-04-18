@@ -1,10 +1,12 @@
 # ga-tracker-snippet
 
-[![Build Status](https://img.shields.io/travis/shinnn/ga-tracker-snippet.svg?style=flat)](https://travis-ci.org/shinnn/ga-tracker-snippet)
+[![NPM version](https://img.shields.io/npm/v/ga-tracker-snippet.svg)](https://www.npmjs.com/package/ga-tracker-snippet)
+[![Bower version](https://img.shields.io/bower/v/ga-tracker-snippet.svg)](https://github.com/shinnn/ga-tracker-snippet/releases)
+[![Build Status](https://img.shields.io/travis/shinnn/ga-tracker-snippet.svg)](https://travis-ci.org/shinnn/ga-tracker-snippet)
 [![Build status](https://ci.appveyor.com/api/projects/status/2t08amtmb6w4trjv?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/ga-tracker-snippet)
-[![Coverage Status](https://img.shields.io/coveralls/shinnn/ga-tracker-snippet.svg?style=flat)](https://coveralls.io/r/shinnn/ga-tracker-snippet)
-[![Dependency Status](https://david-dm.org/shinnn/ga-tracker-snippet.svg?style=flat)](https://david-dm.org/shinnn/ga-tracker-snippet)
-[![devDependency Status](https://david-dm.org/shinnn/ga-tracker-snippet/dev-status.svg?style=flat)](https://david-dm.org/shinnn/ga-tracker-snippet#info=devDependencies)
+[![Coverage Status](https://img.shields.io/coveralls/shinnn/ga-tracker-snippet.svg?label=cov)](https://coveralls.io/r/shinnn/ga-tracker-snippet)
+[![Dependency Status](https://img.shields.io/david/shinnn/ga-tracker-snippet.svg?label=deps)](https://david-dm.org/shinnn/ga-tracker-snippet)
+[![devDependency Status](https://img.shields.io/david/dev/shinnn/ga-tracker-snippet.svg?label=devDeps)](https://david-dm.org/shinnn/ga-tracker-snippet#info=devDependencies)
 
 Generate a code snippet to create a [Google Analytics](http://www.google.com/analytics/) tracker object
 
@@ -22,9 +24,6 @@ ga('send', 'pageview');
 ## Installation
 
 ### Package managers
-
-[![NPM version](https://img.shields.io/npm/v/ga-tracker-snippet.svg?style=flat)](https://www.npmjs.com/package/ga-tracker-snippet)
-[![Bower version](https://img.shields.io/bower/v/ga-tracker-snippet.svg?style=flat)](https://github.com/shinnn/ga-tracker-snippet/releases)
 
 #### [npm](https://www.npmjs.com/)
 
@@ -146,6 +145,6 @@ Options:
 
 ## License
 
-Copyright (c) 2014 [Shinnosuke Watanabe](https://github.com/shinnn)
+Copyright (c) 2014 - 2015 [Shinnosuke Watanabe](https://github.com/shinnn)
 
 Licensed under [the MIT License](./LICENSE).
