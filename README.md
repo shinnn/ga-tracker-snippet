@@ -101,6 +101,4 @@ gaTrackerSnippet('36461297-9', 'foo.example.com');
 
 ## License
 
-Copyright (c) 2014 - 2018 [Shinnosuke Watanabe](https://github.com/shinnn)
-
-Licensed under [the MIT License](./LICENSE).
+[ISC License](./LICENSE) © 2018 Shinnosuke Watanabe

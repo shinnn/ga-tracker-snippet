@@ -1,7 +1,3 @@
-/*!
- * ga-tracker-snippet | MIT (c) Shinnosuke Watanabe
- * https://github.com/shinnn/ga-tracker-snippet
-*/
 !function() {
 'use strict';
 

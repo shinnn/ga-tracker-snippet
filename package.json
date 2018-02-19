@@ -13,7 +13,7 @@
   },
   "repository": "shinnn/ga-tracker-snippet",
   "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
-  "license": "MIT",
+  "license": "ISC",
   "keywords": [
     "ga",
     "tracker",

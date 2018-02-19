@@ -1,8 +1,7 @@
 /*!
- * ga-tracker-snippet | MIT (c) Shinnosuke Watanabe
+ * ga-tracker-snippet | ISC (c) Shinnosuke Watanabe
  * https://github.com/shinnn/ga-tracker-snippet
 */
-
 'use strict';
 
 var isVarName = require('is-var-name');
