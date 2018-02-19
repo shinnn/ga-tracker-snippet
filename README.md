@@ -99,29 +99,6 @@ gaTrackerSnippet('36461297-9', 'foo.example.com');
 //=> 'ga(\'create\', \'UA-36461297-9\', \'foo.example.com\');\nga(\'send\', \'pageview\');'
 ```
 
-## CLI
-
-You can use this module as a CLI tool by installing it [globally](https://www.npmjs.org/doc/files/npm-folders.html#global-installation).
-
-```sh
-npm install -g ga-tracker-snippet
-```
-
-### Usage
-
-```sh
-Usage: ga-tracker-snippet [options]
-
-Options:
---id,      -i  Set web property ID
---domain,  -d  Set domain ("auto" by default)
---global,  -g  Change the global function name ("ga" by default)
---minify,  -m  Omit whitespaces and newlines from output
---double,  -w  Use double quotes (single quotes by default)
---help,    -h  Print usage information
---version, -v  Print version
-```
-
 ## License
 
 Copyright (c) 2014 - 2018 [Shinnosuke Watanabe](https://github.com/shinnn)
