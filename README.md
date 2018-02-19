@@ -1,14 +1,11 @@
 # ga-tracker-snippet
 
-[![NPM version](https://img.shields.io/npm/v/ga-tracker-snippet.svg)](https://www.npmjs.com/package/ga-tracker-snippet)
-[![Bower version](https://img.shields.io/bower/v/ga-tracker-snippet.svg)](https://github.com/shinnn/ga-tracker-snippet/releases)
+[![npm version](https://img.shields.io/npm/v/ga-tracker-snippet.svg)](https://www.npmjs.com/package/ga-tracker-snippet)
 [![Build Status](https://img.shields.io/travis/shinnn/ga-tracker-snippet.svg)](https://travis-ci.org/shinnn/ga-tracker-snippet)
 [![Build status](https://ci.appveyor.com/api/projects/status/2t08amtmb6w4trjv?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/ga-tracker-snippet)
 [![Coverage Status](https://img.shields.io/coveralls/shinnn/ga-tracker-snippet.svg?label=cov)](https://coveralls.io/r/shinnn/ga-tracker-snippet)
-[![Dependency Status](https://img.shields.io/david/shinnn/ga-tracker-snippet.svg?label=deps)](https://david-dm.org/shinnn/ga-tracker-snippet)
-[![devDependency Status](https://img.shields.io/david/dev/shinnn/ga-tracker-snippet.svg?label=devDeps)](https://david-dm.org/shinnn/ga-tracker-snippet#info=devDependencies)
 
-Generate a code snippet to create a [Google Analytics](http://www.google.com/analytics/) tracker object
+Generate a code snippet to create a [Google Analytics](https://www.google.com/analytics/) tracker object
 
 ```javascript
 gaTrackerSnippet({id: '36461297-9', domain: 'shinnn.github.io'});
@@ -23,36 +20,18 @@ ga('send', 'pageview');
 
 ## Installation
 
-### Package managers
+Use npm.
 
-#### [npm](https://www.npmjs.com/)
-
-```sh
+```
 npm install ga-tracker-snippet
 ```
-
-#### [bower](http://bower.io/)
-
-```sh
-bower install ga-tracker-snippet
-```
-
-#### [Duo](http://duojs.org/)
-
-```javascript
-var gaTrackerSnippet = require('shinnn/ga-tracker-snippet');
-```
-
-### Standalone
-
-[Download the standalone build.](https://raw.githubusercontent.com/shinnn/ga-tracker-snippet/master/dist/ga-tracker-snippet-standalone.js)
 
 ## API
 
 ### gaTrackerSnippet([*options*])
 
 *options*: `Object`  
-Return: `String`
+Return: `string`
 
 It returns a string of JavaScript code which creates a [tracker object of Google Universal Analytics](https://developers.google.com/analytics/devguides/collection/analyticsjs/advanced#creation).
 
@@ -62,7 +41,7 @@ gaTrackerSnippet(); //=> 'ga(\'create\', \'UA-XXXXX-X\', \'auto\');\nga(\'send\'
 
 #### options.id
 
-Type: `String`  
+Type: `string`  
 Default: `XXXXX-X`
 
 Set web property ID. `UA-` prefix maybe omitted.
@@ -75,7 +54,7 @@ gaTrackerSnippet({id: 'UA-36461297-9'}) === gaTrackerSnippet({id: '36461297-9'})
 
 #### options.domain
 
-Type: `String`  
+Type: `string`  
 Default: `auto`
 
 Set domain of the site.
@@ -87,7 +66,7 @@ gaTrackerSnippet({domain: 'foo.example.com'});
 
 #### options.globalName
 
-Type: `String`  
+Type: `string`  
 Default: `ga`
 
 Change the [global function name](https://developers.google.com/analytics/devguides/collection/analyticsjs/advanced#renaming).
@@ -99,14 +78,14 @@ gaTrackerSnippet({globalName: '__tracker'});
 
 #### options.minify
 
-Type: `Boolean`  
+Type: `boolean`  
 Default: `false`
 
 Omit whitespaces and newlines from the result.
 
 #### options.singleQuotes
 
-Type: `Boolean`  
+Type: `boolean`  
 Default: `true`
 
 `false` replaces all single quotes with double quotes.
@@ -145,6 +124,6 @@ Options:
 
 ## License
 
-Copyright (c) 2014 - 2015 [Shinnosuke Watanabe](https://github.com/shinnn)
+Copyright (c) 2014 - 2018 [Shinnosuke Watanabe](https://github.com/shinnn)
 
 Licensed under [the MIT License](./LICENSE).
