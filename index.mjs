@@ -1,13 +1,10 @@
-'use strict';
-
-var isVarName = require('is-var-name');
-
 /*!
  * ga-tracker-snippet | ISC (c) Shinnosuke Watanabe
  * https://github.com/shinnn/ga-tracker-snippet
 */
+import isVarName from 'is-var-name';
 
-function gaTrackerSnippet(options) {
+export default function gaTrackerSnippet(options) {
 	if (typeof options === 'string') {
 		options = {id: arguments[0], domain: arguments[1]};
 	} else {
@@ -63,5 +60,3 @@ function gaTrackerSnippet(options) {
 
 	return code;
 }
-
-module.exports = gaTrackerSnippet;

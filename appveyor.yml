@@ -4,6 +4,5 @@ skip_tags: true
 install:
   - ps: Install-Product node Stable
   - npm install
-  - npm run-script pretest
 build: off
-test_script: npm run-script test-only
+test_script: node test.js
